@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+FROM ubuntu:18.04
+RUN apt-get update -y
+COPY info.txt /info.txt
+WORKDIR /
+CMD ["cat", "info.txt"]
